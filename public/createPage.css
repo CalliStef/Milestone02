@@ -1,0 +1,61 @@
+.split-left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 50%;
+    background-color: black;
+}
+
+.split-right{
+    right: 0;
+    background-color: white;
+}
+
+form{
+    font-family: arial;
+    width: 500px;
+    /* justify-self: right; */
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    padding: 50px;
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    font-family: arial;
+    text-align: center;
+    color: gray;
+    background-color: lightgray;
+    border-color: transparent;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 15px;
+}
+
+#button{
+    background-color: black;
+    color: white;
+}
+
+ul{
+    column-count: 2;
+    text-align:justify;
+    padding: 0;
+}
+
+li{
+    
+    display: block;
+    white-space: nowrap;
+    list-style-type: none;
+}
+
+

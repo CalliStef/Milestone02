@@ -4,7 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/"> 
+    <link rel= "stylesheet" href = "createPage.css"/>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class = "split-left"></div>
+    <div class = "split-right"> 
+      <img src="./Desktop/programmer.jpg" alt ="Programmerrrrrrr"/>
+      <form action="/create" method="POST">
+        <h1>Create your DevCard</h1>
+        <div class="flex-container">
+          <label for="full-name"></label>
+          <input type="text" name= "fullName" placeholder ="Your Full Name">
+
+          <textarea  name="aboutMe" rows="5" cols="33", placeholder="About Me"></textarea>
+          
+          <label for="tech">Technologies you Know </label>
+
+            <ul class="checkbox-list">
+              <li><input type="checkbox" name="knownTechnologies" value ="HTML"> 
+              <label for="HTML">HTML</label></li>
+
+              <li><input type="checkbox" name="knownTechnologies" value="CSS">
+              <label for="CSS">CSS</label></li>
+
+              <li><input type="checkbox" name="knownTechnologies" value="JS">
+              <label for="JS">JS</label></li>
+
+              <li><input type="checkbox" name="knownTechnologies" value="Git">
+              <label for="Git">Git</label></li>
+
+              <li><input type="checkbox" name="knownTechnologies" value="React">
+              <label for="React">React</label></li>
+
+              <li><input type="checkbox" name="knownTechnologies" value="Node">
+              <label for="Node">Node.js</label></li>
+            </ul>
+
+          <label for="github"></label>
+          <input type="text" name= "githubUrl" placeholder="Github URL">
+
+          <label for="twitter"></label>
+          <input type="text" name= "twitterUrl" placeholder="Twitter URL">
+
+          <label for="favBooks"></label>
+          <input type="text" name= "favoriteBooks" placeholder="Favourite Books (Separate by comma)">
+
+          <label for="favArtist"></label>
+          <input type="text" name= "favoriteArtists" placeholder="Favourite Artists (Separate by comma)">
+
+          <input type="submit" id= "button" value="Create Site">
+      </div>
+      </form>
+    </div>
+  </body>
 </html>
